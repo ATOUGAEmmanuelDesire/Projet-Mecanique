@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Projet Mechanics" company="Groupe 7" webLink="http://" view-date="2024-03-15" view-index="0" gantt-divider-location="459" resource-divider-location="300" version="3.2.3230" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="197" order="0"/>
+        <field id="tpd4" name="Date de début" width="47" order="1"/>
+        <field id="tpd5" name="Date de fin" width="47" order="2"/>
+        <field id="tpd13" name="Ressources" width="167" order="3"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value="resources"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#000000 #6699ff]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="none">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="2" name="Lecture et appréhension du sujet" color="#6699ff" meeting="false" start="2024-03-20" duration="1" complete="0" thirdDate="2024-02-15" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="1" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="5" name="Elaboration du planning" color="#6699ff" meeting="false" start="2024-03-20" duration="1" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+        <task id="9" name="Étude du plan  incliné" color="#6699ff" meeting="false" start="2024-03-21" duration="5" complete="0" thirdDate="2024-03-16" thirdDate-constraint="0" expand="true">
+            <depend id="20" type="2" difference="0" hardness="Rubber"/>
+            <depend id="35" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="17" name="Étude du saut de ravin (Scilab et Euler)" color="#6699ff" meeting="false" start="2024-03-26" duration="5" complete="0" thirdDate="2024-03-16" thirdDate-constraint="0" expand="true">
+            <depend id="20" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="35" name="Étude du looping" color="#6699ff" meeting="false" start="2024-03-31" duration="5" complete="0" thirdDate="2024-03-13" thirdDate-constraint="0" expand="true">
+            <depend id="20" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="39" name="Faire les testes sur circuit" color="#6699ff" meeting="false" start="2024-04-05" duration="5" complete="0" thirdDate="2024-03-18" thirdDate-constraint="0" expand="true">
+            <depend id="20" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="20" name="Expérimentation sur circuit" color="#000000" meeting="false" start="2024-04-10" duration="3" complete="0" thirdDate="2024-03-16" thirdDate-constraint="0" expand="false">
+            <task id="26" name="Résumé des résultats obtenu" color="#6699ff" meeting="false" start="2024-04-10" duration="3" complete="0" thirdDate="2024-03-16" thirdDate-constraint="0" expand="true"/>
+            <task id="36" name="Présentation des différentes mesures" color="#6699ff" meeting="false" start="2024-04-10" duration="3" complete="0" thirdDate="2024-03-18" thirdDate-constraint="0" expand="true"/>
+            <task id="37" name="Résultats obtenus pour un situation réelle" color="#6699ff" meeting="false" start="2024-04-10" duration="3" complete="0" thirdDate="2024-03-18" thirdDate-constraint="0" expand="true"/>
+            <task id="38" name="Une critique des résultats obtenus" color="#6699ff" meeting="false" start="2024-04-10" duration="3" complete="0" thirdDate="2024-03-18" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="24" name="Budget" color="#6699ff" meeting="false" start="2024-04-12" duration="3" complete="0" thirdDate="2024-03-16" thirdDate-constraint="0" expand="true"/>
+        <task id="8" name="PowerPoint" color="#6699ff" meeting="false" start="2024-04-12" duration="3" complete="0" thirdDate="2024-03-16" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="ATOUGA Emmanuel" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="KUITANG Audrey" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="NKOULOU Joseph" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="OLINGA Jean Donald" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="DJUISSOU Happi" function="Default:0" contacts="" phone=""/>
+        <resource id="5" name="TANESSOK Larelle" function="Default:0" contacts="" phone=""/>
+        <resource id="6" name="Groupe" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="38" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="36" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="36" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="24" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="36" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="36" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="39" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
